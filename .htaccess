@@ -1,0 +1,25 @@
+# scds/.htaccess
+
+
+RewriteEngine On
+
+#RewriteRule ^$ home.php [L]
+
+
+# if not a file:
+RewriteCond %{REQUEST_FILENAME} !-f 
+# and not a directory:
+RewriteCond %{REQUEST_FILENAME} !-d
+# then sent to error page:
+RewriteRule .* http://cs.swansea.ac.uk/~scds/scds/error-page.php [L]
+
+
+
+#Options -Indexes
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+#<IfModule mime_module>
+#  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+#</IfModule>
+# php -- END cPanel-generated handler, do not edit

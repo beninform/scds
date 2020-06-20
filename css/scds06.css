@@ -1,0 +1,711 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+	margin:.0 0 .2em 0;
+	padding:0;
+	border:0; /* removes border around the viewport in old versions of IE */
+	width:100%;
+	background:#eaf2d0;
+	/*font-size:90%;*/
+    font-family: verdana, Arial, helvetica, "sans serif", sans-serif;
+}
+.sblue {
+    background: blue;
+}
+.sred {
+    background: red;
+}
+.sgreen {
+    background: green;
+}
+.syellow {
+    background: yellow;
+}
+.sviolet {
+    background: violet;
+}
+
+.SCDS {
+background: #eee;
+}
+
+
+/***** TEXT STYLES *****/
+h1 {
+    font:2.4em verdana, Arial, helvetica, "sans serif", sans-serif;
+    color:#333;
+}
+h2 {
+    font:1.3em verdana, Arial, helvetica, "sans serif", sans-serif;
+    color:#333;
+}
+h3 {
+    font:bold 1em verdana, Arial, helvetica, "sans serif", sans-serif;
+    color:#333;
+}
+h4 {
+    font:bold 0.9em verdana, Arial, helvetica, "sans serif", sans-serif;
+    color:#333;
+}
+h5 {
+    font:1em verdana, Arial, helvetica, "sans serif", sans-serif;
+    color:#333;
+}
+p {
+    font:1em verdana, Arial, helvetica, "sans serif", sans-serif;
+    color:#222;
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+.bibliog p {
+    font: 0.8em verdana, Arial, helvetica, "sans serif", sans-serif;
+    color:#222;
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+.sml {
+    font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 0;
+	margin:.4em 0 .8em 0;
+}
+.sml-txt {
+    font: 0.7em Verdana, Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 1px;
+    margin: 1px;    
+}
+
+/***** LINK STYLES *****/
+a.green, a.purp, a.blue {
+	font:1.0em
+	}
+a.green:link, a.green:visited {
+	color:darkgreen; 
+	text-decoration:none;
+	}
+a.purp:link, a.purp:visited {
+	color:#4100cc; 
+	text-decoration:none;
+	}
+a.blue:link, a.blue:visited {
+	color:darkblue; 
+	text-decoration:none;
+	}
+a.green:hover,a.green:active,
+a.purp:hover,a.purp:active,
+a.blue:hover,a.blue:active {
+	text-decoration:underline;
+	}
+
+/*        BUTTONS       */
+.login-button {
+    float:right;
+}
+.SCDS .link-box {
+    width: 100%;
+    max-width: 160px;
+}
+.SCDS .RHlink a {
+    border: none;
+    color: white;
+    padding: 12px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+.SCDS .RHlink a {
+    background-color: #444;
+}
+.username {
+    margin: 10px 0 10px 4px;
+    font: 1em Verdana, Arial, Helvetica, sans-serif;
+    color: darkred;
+}
+.usrnm-label {
+    font: 0.9em Verdana, Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 1px;
+    margin: 1px 0 1px 4px;    
+}
+
+/***** ELEMENTS *****/
+.button {
+    background-color: #adbcd3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/***** DIVS *****/
+.SCDS .admin {
+    padding: 0 2% 0 2%;
+    background-color:#ddd;
+}
+.SCDS .users {
+    padding: 0 2% 0 2%;
+}
+
+/***** SKIP LINKS *****/
+/* Hide the skip links off the page until focused */
+.skip {
+    position: absolute;
+    left: -999em;  
+    padding: 8px;
+}
+a.skip:active,  a.skip:focus {
+    left: 5em;  
+    color: #000;
+    background: #e77e23;
+    font: 1em Verdana, Arial, Helvetica, sans-serif;
+}
+
+/***** TABLE STYLES *****/
+.SCDS .table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.SCDS .table td, .SCDS .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.SCDS .table tr:nth-child(even){background-color: #f2f2f2;}
+
+.SCDS .table tr:hover {background-color: #ddd;}
+
+.SCDS .table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #adbcd3;
+  color: white;
+}
+#shares-01 tr td:nth-child(2), #shares-01 tr td:nth-child(3),   /* td */
+#shares-01 tr th:nth-child(2), #shares-01 tr th:nth-child(3) {  /* th */
+   text-align: right;
+   padding-right: 25px;
+}
+#shares-01 tr td:nth-child(4), #shares-01 tr td:nth-child(5),   /* td */
+#shares-01 tr th:nth-child(4), #shares-01 tr th:nth-child(5) {  /* th */
+   text-align: center;
+}
+
+/******* LAYOUT FROM https://matthewjamestaylor.com *******/
+/******* Column container *******/
+.colmask {
+	position:relative;	/* Fixes IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;	/* chops off any overhanging divs */
+}
+
+/******* common column settings *******/
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns*/
+                    	/* just make them narrower instead     */
+                    	/* only padding top and bottom         */
+	overflow:hidden;
+}
+
+/******* 3-Column settings *******/
+    .topnav {
+        display: Block;
+    }
+    .o-nav {
+        display: None;
+    }
+.threecol .colmid {
+	right:17%;			/* match width of right column     */
+	/* background:brown;	center column background colour */
+}
+.threecol .colleft {
+	right:66%;			/* match width of middle column  */
+	/* background: red;	left column background colour */
+}
+.threecol .col1 {
+	width:62%;/* width of center column content (col width minus its padding) */
+	left:102%;			/* 100% plus left padding of center column */
+	/*background:blue;*/
+	
+}
+.threecol .col2 {
+	width:13%;/* Width of left column content (col width minus its padding) */
+	left:23%;   /* width of (right column) */
+            	/* plus (center column left and right padding)*/
+            	/* plus (left column left padding) */
+    /*background:green;*/
+    top: 3em;
+}
+.threecol .col3 {
+	width:13%;/* Width of right column content (col width minus its padding) */
+	left:93%;   /*(100% - left column width) */
+            	/*plus (center column left and right padding) */
+            	/*plus (left column left and right padding) */
+            	/*plus (right column left padding) */
+	/*background:pink;*/
+	top: 3em;
+}
+.main-body-pic {
+    width: 60%;
+}
+.funder-logos {
+    width: 90%;
+}
+
+/******* 2-Column settings *******/
+@media screen and (max-width: 1000px) {
+    .topnav {
+        display: Block;
+    }
+    .o-nav {
+        display: None;
+    }
+    .threecol .colmid {
+        width:100%;
+        right: 0;
+        padding: 2px;
+    }
+    .threecol .colleft {
+        width: 99%;
+        right: 0;
+        padding: 2px;
+    }
+    .threecol .col1 {
+    	width:95%;
+    	left:2%;
+        padding: 2px;
+      	border-bottom: solid #bbb 1px;
+
+    }
+    .threecol .col2 {
+        width: 46%;
+        left: 2%;
+        padding: 2px;
+        top: 0;
+    }
+    .threecol .col3 {
+        width: 46%;
+        left: 4%;
+        padding: 2px;
+        top: 0;
+    }
+    h1 {
+        font:2em verdana, Arial, helvetica, "sans serif", sans-serif;
+        color:#333;
+    }
+    .main-body-pic {
+        width: 60%;
+    }
+    .funder-logos {
+        width: 70%;
+    }
+} 
+
+
+/******* 1-Column settings *******/
+@media screen and (max-width: 600px) {
+    .topnav {
+        display: None;
+    }
+    .o-nav {
+        display:block;
+    }
+    .threecol .colmid {
+        width: 100%;
+    	right:0;			/* brown match width of right column     */
+    }
+    .threecol .colleft {
+        width: 99%;
+    	right:0;			/* red match width of middle column  */
+    }
+    .threecol .col1 {
+    	width:96%;/* width of center column content (col width minus its padding) */
+    	left:0;			/* 100% plus left padding of center column */
+    	padding: 0 2% 0 2%;
+      	border-bottom: solid #bbb 1px;
+    }
+    .threecol .col2 {
+    	width:96%;/* Width of left column content (col width minus its padding) */
+    	left:0;   /* width of (right column) */
+                	/* plus (center column left and right padding)*/
+                	/* plus (left column left padding) */
+    	padding: 0 2% 0 2%;
+        top: 0;
+      	border-bottom: solid #bbb 1px;
+    }
+    .threecol .col3 {
+    	width:96%;/* Width of right column content (col width minus its padding) */
+    	left:0;   /*(100% - left column width) */
+                	/*plus (center column left and right padding) */
+                	/*plus (left column left and right padding) */
+                	/*plus (right column left padding) */
+    	padding: 0 2% 0 2%;
+    	top: 0;
+
+    }
+    h1 {
+        font:1.6em verdana, Arial, helvetica, "sans serif", sans-serif;
+        color:#333;
+    }
+    .main-body-pic {
+        width: 60%;
+    }
+
+    .funder-logos {
+        width: 60%;
+    }
+
+} 
+
+/********* in-page columns layout *********/
+
+.column3 {
+    float:left;
+    width:31.11%;
+    margin: 0 1.11% 0 1.11%;
+}
+.column2 {
+    float:left;
+    width:47%;
+    margin: 0 1.5% 0 1.5%;
+    
+}
+/* Clear floats after columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column3, .column2 {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+
+
+/********* TOPNAV MENU *********/
+/* background color for top navigation */
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  top: 0; /* Stay on top */
+  width: 100%;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 1;
+}
+.SCDS .topnav {
+  background-color: #aca2c2;
+}
+.SCDS .topnav {
+  background-color: #adbcd3;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover - same on both WCM and WFL*/
+.topnav a:hover {
+  background-color: #9eaecd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #9eaecd;
+  color: white;
+}
+.SCDS #maincontainer {
+    padding-top: 30px;
+}
+
+/* sets darker color if id and class are same (ie, if you're on that page) */
+#home .home, 
+#studies .studies,
+#join .join,
+#about .about {
+  background-color: #888; 
+}
+
+/********* O-NAV MENU *********/
+/* background color for o-navigation */
+.o-nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0; /* Stay on top */
+  width: 100%;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 1;
+}
+
+.SCDS .o-nav {
+  background-color: #aca2c2;
+}
+.SCDS .o-nav {
+  background-color: #adbcd3;
+}
+/* Style the links inside the navigation bar */
+.o-nav span {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.o-nav span:hover {
+  background-color: #9eaecd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.o-nav span.active {
+  background-color: #9eaecd;
+  color: white;
+}
+
+
+/********* OVERLAY MENU *********/
+/* from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.SCDS .overlay {
+  background-color: rgb(173,188,211); /* Solid fallback color */
+  background-color: rgba(173,188,211, 0.95); /* Color w/opacity */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Footer styles */
+#footer {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:25px;
+	width:100%;
+	padding: 4px;
+	font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+  	background: #ccc;
+  	border-style: solid;
+  	border-color: #bbb;
+  	border-width: 1px;
+        z-index:100;
+}
+
+/***************COOKIE CONSENT**********************/
+/*
+https://html-online.com/articles/cookie-warning-widget-with-javascript/
+*/
+#cookieBar {
+    z-index: 999;
+    min-height: 20px;
+    font-family: OpenSans, arial, "sans-serif";
+    padding: 10px 20px;
+    background: #000;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: fixed;
+    color: #FFF;
+    bottom: 0;
+    right: 0;
+    display: none;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+#cookieBar div {
+    padding: 5px 0 0;
+}
+#cookieBar a {
+    color: #ffba55;
+    display: inline-block;
+    padding: 0 10px;
+}
+#cookieBar a:hover {
+	color: #fda016;
+}
+#cookieBar a#cookieButton {
+    display: inline-block;
+    color: #000000;
+    font-size: 1.1em;
+	background: #ffba55;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    float: right;
+    border-radius: 5px;
+}
+#cookieBar a#cookieButton:hover {
+    background: #fda016;
+	color: #000;
+}
+
+/************* COOKIE INFO OVERLAY **************/
+
+ /* The Modal (background) */
+#cookieOverlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+/* Modal Content/Box */
+#cookieOverlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font: 1em Verdana, Arial, helvetica, "sans serif", sans-serif;
+  background-color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  padding: 10px;
+}
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Change styles for cookie text modal on small screens */
+@media screen and (max-width: 800px) {
+  #cookieOverlayText {
+    top: 10%;
+    left: 12%;
+    right: 12%;
+    font: 0.9em Verdana, Arial, helvetica, "sans serif", sans-serif;
+    transform: translate(0);
+    -ms-transform: translate(0);
+    padding: 4px;
+      
+  }
+    .close {
+      /* Position it in the top right corner outside of the modal */
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      font-size: 30px;
+    }
+}
+
+/***************** TABLE *****************/
+table.cookie-info {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #5e8a76;
+  border-style: solid;
+  color: #000000;
+}
+
+table.cookie-info td, table.cookie-info th {
+  border-width: 1px;
+  border-color: #5e8a76;
+  border-style: solid;
+  padding: 5px;
+  font: 0.9em Verdana;
+}
+
+table.cookie-info thead {
+  background-color: #abdbc5;
+}

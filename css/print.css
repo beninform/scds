@@ -1,0 +1,173 @@
+body {
+	background:#fff;
+}
+.SCDS {
+background: #fff;
+}
+h1 {
+    font:1.8em;
+    color:#000;
+}
+h2,h3,h4,h5 {
+    color:#000;
+    padding:0;
+    margin:0;
+}
+p, .bibliog p, .sml, .sml-txt {
+    color: black;
+}
+a.green:link, a.green:visited,
+a.purp:link, a.purp:visited,
+a.blue:link, a.blue:visited {
+	color: black; 
+	}
+.SCDS .link-box {
+    display: None;
+}
+.SCDS .table td, .SCDS .table th {
+  border: 1px solid #000;
+}
+.SCDS .table tr:nth-child(even){background-color: #fff;}
+
+.SCDS .table tr:hover {background-color: #fff;}
+
+.SCDS .table th {
+  background-color: #eee;
+  color: #000;
+}
+
+
+
+
+/******* LAYOUT FROM https://matthewjamestaylor.com *******/
+/******* Column container *******/
+.colmask {
+	position:relative;	/* Fixes IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;	/* chops off any overhanging divs */
+	
+	background-color:#fff;
+}
+
+/******* common column settings *******/
+.colmid {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+	left:0;
+	right:0;
+}
+.col1,
+.col2,
+.col3 {
+	clear:both;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns*/
+                    	/* just make them narrower instead     */
+                    	/* only padding top and bottom         */
+	overflow:hidden;
+}
+
+
+
+
+
+/******************  for deletion *******************/
+/*repeated below to supersede*/
+.threecol .col1 {
+	width:92%;
+	left:2%;
+	right:2%;
+}
+.threecol .col2 {
+	width:0%;/* Width of left column content (col width minus its padding) */
+	left:0%;   /* width of (right column) */
+            	/* plus (center column left and right padding)*/
+            	/* plus (left column left padding) */
+    /*background:green;*/
+    top: 0;
+    display: None;
+}
+.threecol .col3 {
+	width:0%;/* Width of right column content (col width minus its padding) */
+	left:0%;   /*(100% - left column width) */
+            	/*plus (center column left and right padding) */
+            	/*plus (left column left and right padding) */
+            	/*plus (right column left padding) */
+	/*background:pink;*/
+	top: 0;
+    display: None;
+}
+
+
+/******* 3-Column settings *******/
+.threecol .colmid {
+	right:100%;			/* match width of right column     */
+	/* background:brown;	center column background colour */
+}
+.threecol .colleft {
+	right:0%;			/* match width of middle column  */
+	/* background: red;	left column background colour */
+}
+.threecol .col1 {
+	width:92%;/* width of center column content (col width minus its padding) */
+	left:2%;			/* 100% plus left padding of center column */
+	/*background:blue;*/
+	
+}
+.threecol .col2 {
+	width:0%;/* Width of left column content (col width minus its padding) */
+	left:0%;   /* width of (right column) */
+            	/* plus (center column left and right padding)*/
+            	/* plus (left column left padding) */
+    /*background:green;*/
+    top: 0;
+}
+.threecol .col3 {
+	width:0%;/* Width of right column content (col width minus its padding) */
+	left:0%;   /*(100% - left column width) */
+            	/*plus (center column left and right padding) */
+            	/*plus (left column left and right padding) */
+            	/*plus (right column left padding) */
+	/*background:pink;*/
+	top: 0;
+}
+
+
+
+.main-body-pic {
+    display: None;
+}
+.funder-logos {
+    display: None;
+}
+.topnav {
+    display: None;
+}
+.SCDS .topnav {
+    display: None;
+}
+.SCDS .overlay-content {
+    display: None;
+}
+.SCDS #topcontainer {
+    display: None;
+}
+.skip {
+    display: None;
+}
+#cookieOverlayText {
+    display: None;
+}
+#footer {
+    display: None;
+}
+@media print  /** added as media query because of js setting display block **/
+{    
+    #cookieBar.no-print
+    {
+        display: none !important;
+    }
+}
