@@ -31,7 +31,7 @@ include($root . 'gbl/includes/cookie-on-login.php');
                 
                 <h1>About the project</h1>
 
-                <img src="<?php echo $root ?>img/piqsels-svvxr-600.png" title="picture of clinic tech (CC0) from https://www.piqsels.com/" class="main-body-pic" />
+                <img src="<?php echo $root ?>img/piqsels-svvxr-600.png" title="picture of clinic tech (CC0) from piqsels.com" alt="picture of clinic tech (CC0) from piqsels.com" class="main-body-pic" />
 
                 <p>This project aims to study the way clinicians interact with artificial intelligence decision support tools.</p>
 

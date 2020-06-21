@@ -17,13 +17,10 @@ if ($CURRENT_PAGE == "home") { ?>
 <link rel="icon" 
       type="image/png" 
       href="<?php echo $root; ?>img/elements/favicon.png" />
-	  
-<?php
-echo "
-<link rel='stylesheet' type='text/css' href='$root/css/scds06.css' />
-<link rel='stylesheet' media='print' href='$root/css/print.css' />
 
-<script src='$root/jsc/overlay-menu.js'></script> 
-<script src='$root/jsc/navbar-hide-scroll.js'></script>
-"
-?>
+
+<link rel='stylesheet' type='text/css' href='<?php echo $root: ?>css/scds06.css' />
+<link rel='stylesheet' media='print' href='<?php echo $root: ?>css/print.css' />
+
+<script src='<?php echo $root: ?>jsc/overlay-menu.js'></script> 
+<script src='<?php echo $root: ?>jsc/navbar-hide-scroll.js'></script>

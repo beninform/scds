@@ -31,7 +31,7 @@ include($root . 'gbl/includes/cookie-on-login.php');
             <section class="threecol col1">
                 <h1>Oops!</h1>
 
-                <img src="<?php echo $root ?>img/piqsels-sjsqa-600.png" title="lost user (CC0) from https://www.piqsels.com/" class="main-body-pic" />
+                <img src="<?php echo $root ?>img/piqsels-sjsqa-600.png" title="lost user (CC0) from piqsels.com"  alt="lost user from piqsels.com"class="main-body-pic" />
                 
                 <h2>Page not found</h2>
 

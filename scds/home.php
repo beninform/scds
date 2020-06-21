@@ -31,20 +31,18 @@ include($root . 'gbl/includes/cookie-on-login.php');
             <section class="threecol col1">
                 <h1>Swansea Clinical Decision Support</h1>
 
-                <img src="<?php echo $root ?>img/piqsels-zbdpz-600.png" title="picture of clinic tech (CC0) from https://www.piqsels.com/" class="main-body-pic" />
+                <img src="<?php echo $root ?>img/piqsels-zbdpz-600.png" title="picture of clinic tech (CC0) from piqsels.com"  alt="picture of clinic tech (CC0) from piqsels.com"class="main-body-pic" />
                 
-                <h2>Help establish what good practice will look like in the clinic of the future</h2>
+                <h2>A research project to study what will make good clinical AI</h2>
                 
-                <p>Artificial Intelligence (AI), big data, machine learning, smart systems and predictive analytics are already having an impact on clinical practice (<a id="1-t" href="#1-r" class="blue">Ahmed et al, 2020</a>). As the IMIA report in 2019 argued, "Commitment to rigorous initial and ongoing evaluation will be critical to ensuring the safe and effective integration of AI in complex sociotechnical settings" (<a id="2-t" href="#2-r" class="blue">Magrabi et al, 2019</a>). This project aims to take forward that commitment to initial and ongoing evaluation.</p>
+                <p>Artificial Intelligence (AI), big data, machine learning, smart systems and predictive analytics are already having an impact on clinical practice (<a id="1-t" href="#1-r" class="blue">Ahmed et al, 2020</a>). As the IMIA report in 2019 argued, "Commitment to rigorous initial and ongoing evaluation will be critical to ensuring the safe and effective integration of AI in complex sociotechnical settings" (<a id="2-t" href="#2-r" class="blue">Magrabi et al, 2019</a>). This project aims to take forward that commitment.</p>
                 
-                <p>Many clinicians will be concerned that current clinical IT systems routinely fall short of expectation (<a id="4-t" href="#4-r" class="blue">Wachter & Howell 2018</a>, <a id="5-t" href="#5-r" class="blue">Gawande 2018</a>). So much so that the wider development of AI employed in clinical contexts - which is an important area for discussion both within clinical circles and as an engaged public discourse () - may appear to place further technical complexities and burdens in the way of good clinical practice.</p>
+                <p>Many clinicians will be concerned that current clinical IT systems routinely fall short of expectation (<a id="4-t" href="#4-r" class="blue">Wachter & Howell 2018</a>, <a id="5-t" href="#5-r" class="blue">Gawande 2018</a>). So much so that the wider development of AI in this context may look like it threatens to place further technical complexity and cognitive burden in the way of good clinical practice.</p>
                 
-                <p>The current phase of this project (summer 2020) aims to examine the effect of different interaction characteristics on the perceived usefulness of an AI-driven suggestion.</p>
+                <p>The current phase of this project (summer 2020) is looking how AI-driven decision support tools are seen by clinicians. Specifically,  it aims to investigate the influence of key interaction characteristics on the trust that clinicians place in such tools.</p>
                 
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
                 
-                <p>References</p>
+                <h2>References</h2>
                 
                 <div class="bibliog">
                     

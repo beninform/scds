@@ -1,5 +1,5 @@
 <?php
-echo '<br /><br /><br />';
+//echo '<br /><br /><br />';  // added to force subsequent echo lines below menu bar
 $DocRoot = $_SERVER['DOCUMENT_ROOT'];
 if ($DocRoot=='/opt/lampp/htdocs') {
 	$cnt = 0;

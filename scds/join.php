@@ -31,7 +31,7 @@ include($root . 'gbl/includes/cookie-on-login.php');
             <section class="threecol col1">
                 <h1>Join</h1>
 
-                <img src="<?php echo $root ?>img/piqsels-faqta-600.png" title="picture of clinic tech (CC0) from https://www.piqsels.com/" class="main-body-pic" />
+                <img src="<?php echo $root ?>img/piqsels-faqta-600.png" title="picture of clinic tech (CC0) from piqsels.com" alt="picture of clinic tech (CC0) from piqsels.com" class="main-body-pic" />
 
                 <p>The project is open to all clinicians (including trainees). You will need to register your consent and allow session cookies on your device.</p>
 

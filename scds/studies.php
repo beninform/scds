@@ -31,7 +31,7 @@ include($root . 'gbl/includes/cookie-on-login.php');
             <section class="threecol col1">
                 <h1>Studies</h1>
 
-                <img src="<?php echo $root ?>img/piqsels-zbjuu-600.png" title="picture of clinic tech (CC0) from https://www.piqsels.com/" class="main-body-pic" />
+                <img src="<?php echo $root ?>img/piqsels-zbjuu-600.png" title="picture of clinic tech (CC0) from piqsels.com" alt="picture of clinic tech (CC0) from piqsels.com" class="main-body-pic" />
                 
                 <p>The current study involves interacting with three different designs.</p>
                 
