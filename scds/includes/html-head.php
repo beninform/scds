@@ -19,8 +19,8 @@ if ($CURRENT_PAGE == "home") { ?>
       href="<?php echo $root; ?>img/elements/favicon.png" />
 
 
-<link rel='stylesheet' type='text/css' href='<?php echo $root: ?>css/scds06.css' />
-<link rel='stylesheet' media='print' href='<?php echo $root: ?>css/print.css' />
+<link rel='stylesheet' type='text/css' href='<?php echo $root ?>css/scds06.css' />
+<link rel='stylesheet' media='print' href='<?php echo $root ?>css/print.css' />
 
-<script src='<?php echo $root: ?>jsc/overlay-menu.js'></script> 
-<script src='<?php echo $root: ?>jsc/navbar-hide-scroll.js'></script>
+<script src='<?php echo $root ?>jsc/overlay-menu.js'></script> 
+<script src='<?php echo $root ?>jsc/navbar-hide-scroll.js'></script>
