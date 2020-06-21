@@ -1,8 +1,0 @@
-edited htaccess to replace tilde with %7e. But that came out as e in url. So changed it back (No net change).
-http://cs.swansea.ac.uk/~scds/scds/error-page.php
-http://cs.swansea.ac.uk/%7escds/scds/error-page.php
-
-edited join.php to alter the href for the signup page, putting a $root variable in front. But that didn't fix the cached redirect issue (new private browser did!). So changed it back (no net change).
-<?php echo $root; ?>scds/
-
-
