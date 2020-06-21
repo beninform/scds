@@ -7,11 +7,11 @@ RewriteRule ^$ home.php [L]
 
 
 # if not a file:
-RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-f
 # and not a directory:
 RewriteCond %{REQUEST_FILENAME} !-d
-# then sent to error page:
-RewriteRule .* http://cs.swansea.ac.uk/~scds/scds/error-page.php [L]
+# then send to error page:
+RewriteRule ^(.*) http://cs.swansea.ac.uk/~scds/scds/error-page.php [L]
 
 
 
